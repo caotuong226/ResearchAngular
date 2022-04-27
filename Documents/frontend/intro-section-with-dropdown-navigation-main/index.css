@@ -1,0 +1,126 @@
+*{
+    font-size: 18px;
+    overflow-x: hidden;
+}
+h1{
+    font-size: 45px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+img{
+    margin-right: 40px;
+    max-width: 100%;    
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.main-tittle{
+    margin-left: 100px;
+
+}
+.tittle1{
+    font-size: 80px;
+    font-weight: 700;
+    width: 70%;
+}
+.tittle2{
+    width: 55%;
+    color: hsl(0, 0%, 41%);
+    padding-bottom: 30px;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+a{
+    color: hsl(0, 0%, 41%);
+    margin-right: 40px;
+    text-decoration: none;
+}
+a:hover{
+    color:hsl(0, 0%, 8%);
+}
+i{
+    display:inline-block ;
+    background-image: url(./images/icon-arrow-down.svg);
+    width: 10px;
+    height: 6px;
+    margin-left: 5px;
+}
+/* i:hover{
+    display:inline-block ;
+    background-image: url(./images/icon-arrow-up.svg);
+    width: 10px;
+    height: 6px;
+    margin-left: 5px;
+} */
+.btn{
+    align-items: center;
+    display: flex;
+}
+.register-btn{
+    border: 2px solid hsl(0, 0%, 41%);
+    padding: 5px 20px;
+   border-radius: 10px;
+   margin: 0;
+}
+.content{
+    clear: both;
+    width: 100%;
+    display: flex;
+}
+.context {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    
+}
+.logo{
+    margin-left: 100px;
+}
+.content-chil{
+    margin-right: 100px;
+}
+button{
+    background: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    border: none;   
+    padding: 12px 24px;
+    border-radius: 14px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .content-left{
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 60px;
+        padding-right: 20px;
+    }
+    .content-right{
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .content-left{
+        width: 100%;
+        order: 2;
+        padding-left: 20px;
+        padding-right: 0;
+    }
+    .content-right{
+        width: 100%;
+        order: 1;
+    }
+    .content{
+        flex-direction: column;
+    }
+}
